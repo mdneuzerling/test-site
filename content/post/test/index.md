@@ -27,7 +27,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-rmd_hash: 6827d5d97b9830dd
+rmd_hash: c06ea2d3c4575807
 
 ---
 
@@ -42,7 +42,7 @@ Hello, this is a test post.
 
 </div>
 
-The below recreates the above R chunk, but with a Python list instead of an R vector.
+The below recreates the above R chunk, but with a Python list instead of an R vector. We can see that the input for the list appears as `NA` in the markdown file, although the output is unaffected.
 
 <div class="highlight">
 
@@ -53,13 +53,26 @@ NA
 
 </div>
 
-The below contains a single line of bash: `echo 'This is a bash chunk'`.
+The below contains a single line of bash: `echo 'This is a bash chunk'`. Again, the input is `NA`, but the output is unaffected.
 
 <div class="highlight">
 
 <pre class='chroma'><code class='language-r' data-lang='r'>NA
 
 <span class='c'>#&gt; This is a bash chunk</span></code></pre>
+
+</div>
+
+Let's try scala now. The below line of code is `(1 to 4).foreach(println(_))`, which prints the integers each on a new line.
+
+<div class="highlight">
+
+<pre class='chroma'><code class='language-r' data-lang='r'>NA
+
+<span class='c'>#&gt; 1</span>
+<span class='c'>#&gt; 2</span>
+<span class='c'>#&gt; 3</span>
+<span class='c'>#&gt; 4</span></code></pre>
 
 </div>
 

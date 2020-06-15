@@ -47,3 +47,9 @@ The below contains a single line of bash: `echo 'This is a bash chunk'`. Again, 
 ```{bash}
 echo 'This is a bash chunk'
 ```
+
+Let's try scala now. The below line of code is `(1 to 4).foreach(println(_))`, which prints the integers each on a new line.
+
+```{scala}
+(1 to 4).foreach(println(_))
+```
